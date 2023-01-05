@@ -23,7 +23,7 @@ def loginUser(request):
 
         if user is not None:
             login(request, user)
-            return HttpResponse('user is logged in (github check)')
+            return HttpResponse('user is logged in (github branch check)')
 
     else:
         form = LoginUserForm()
